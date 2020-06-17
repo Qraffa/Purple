@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.qraffa</groupId>
-    <artifactId>purple-backend-project</artifactId>
+    <artifactId>purple-judger-module</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>purple-backend-project</name>
+    <name>pruple-judger-module</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -61,17 +61,25 @@
             <version>1.2.68</version>
         </dependency>
 
+        <!-- commons-codec -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.14</version>
+        </dependency>
+
+        <!-- commons-compress -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.20</version>
+        </dependency>
+
         <!-- cglib -->
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.3.0</version>
-        </dependency>
-
-        <!-- redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <!-- guava -->
@@ -100,12 +108,6 @@
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-framework</artifactId>
             <version>5.0.0</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
     </dependencies>

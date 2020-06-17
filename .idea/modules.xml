@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pruple-judger-module/pruple-judger-module.iml" filepath="$PROJECT_DIR$/pruple-judger-module/pruple-judger-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/purple-backend-module/purple-backend-module.iml" filepath="$PROJECT_DIR$/purple-backend-module/purple-backend-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/purple-backend-module/purple-backend-project.iml" filepath="$PROJECT_DIR$/purple-backend-module/purple-backend-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/purple-judger-module/purple-judger-module.iml" filepath="$PROJECT_DIR$/purple-judger-module/purple-judger-module.iml" />
     </modules>
   </component>
 </project>

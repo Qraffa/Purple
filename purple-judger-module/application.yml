@@ -1,0 +1,32 @@
+server:
+  port: 9500
+
+judger:
+  judgePath: /judger/judge
+  dataPath: /judger/data
+  errorPath: /judger/err.out
+  logPath: /judger/judger.log
+  judgeSO: /purple/libjudger.so
+  uid: 5000
+  gid: 5000
+  owner: code
+  group: code
+  clear: true
+
+dubbo:
+  application:
+    name: judger1
+  registry:
+    address: zookeeper://qraffa.cn:2181
+  protocol:
+    name: dubbo
+    port: 20881
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    servlet:
+  multipart:
+    max-file-size: 20MB
+    max-request-size: 20MB
+    enabled: true

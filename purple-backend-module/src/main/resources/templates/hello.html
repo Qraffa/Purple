@@ -5,10 +5,20 @@
     <title>Thymeleaf</title>
 </head>
 <body>
-    <p th:text="${hello}"></p>
+    <h3 th:text="${hello}"></h3>
+    <p>A + B problem</p>
+    <p>输入两个整数 a,b，输出它们的和</p>
+    <p>时间限制：1000ms | 内存限制：32mb</p>
+    <p>仅支持C语言</p>
+    </br>
     <form action="#" th:action="@{/run}" th:object="${judgeInfo}" method="post">
         <textarea name="code" id="code" cols="30" rows="10" th:field="*{code}"></textarea>
+        </br>
+        <input type="text" th:field="*{problemId}">
+        </br>
         <input type="submit">
     </form>
+    <p>范例</p>
+    <p th:utext="${sample}"></p>
 </body>
 </html>

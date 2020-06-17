@@ -1,0 +1,27 @@
+server:
+  port: 9123
+
+judger:
+  judgePath: /home/qraffa/purple/judge
+  dataPath: /home/qraffa/purple/data
+  errorPath: /home/qraffa/purple/err.out
+  logPath: /home/qraffa/purple/judger.log
+  judgeSO: /home/qraffa/github/Judger/output/libjudger.so
+  uid: 1000
+  gid: 1000
+  owner: qraffa
+  group: qraffa
+  clear: false
+
+dubbo:
+  application:
+    name: judger1
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20881
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
